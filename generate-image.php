@@ -99,7 +99,7 @@ function generateWord($filename, $term, $explanation, $region) {
 
     // Draw the term text
     foreach ($termLines as $index => $line) {
-        imagettftext($image, $termFontSize, 0, $termX, $termY + $index * $termFontSize * $termLineHeight, $black, $fontPathterm, $line);
+        imagettftext($image, (int) $termFontSize, 0, (int) $termX, (int) ($termY + $index * $termFontSize * $termLineHeight), $black, $fontPathterm, $line);
     }
 
     // Adjust font size for explanation
