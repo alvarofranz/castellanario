@@ -104,7 +104,7 @@ if (isset($_GET['action'])) {
     }
 }
 if ($action === 'show-random') {
-    $returned_terms = $db_connection->query("SELECT * FROM `castellanario` ORDER BY RAND() LIMIT 100");
+    $returned_terms = $db_connection->query("SELECT * FROM `castellanario` ORDER BY RAND() LIMIT 25");
     $terms_data = array();
     while ($term_data = $returned_terms->fetch_assoc()) {
         $terms_data[] = $term_data;
@@ -135,6 +135,8 @@ if ($action === 'show-random') {
                 padding: 3rem;
                 font-size: 17px;
                 color: #111;
+                background-image: url('/assets/papelito.jpg');
+                background-size: cover;
             }
 
             * {
