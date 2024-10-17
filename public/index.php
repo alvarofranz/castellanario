@@ -379,6 +379,9 @@ if ($action === 'show-random') {
                 case 'me-vale-verga':
                     $yt_video_id = 'hIdfAfk_aiI';
                     break;
+                case 'me-lo-meto-por-el-culo':
+                    $yt_video_id = '_lc7xFkw-tk';
+                    break;
             }
             if(isset($yt_video_id)){
                 echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $yt_video_id . '" title="Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
