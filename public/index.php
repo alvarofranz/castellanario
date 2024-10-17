@@ -158,6 +158,15 @@ if ($action === 'show-random') {
                 gap: 2rem;
             }
 
+            iframe {
+                width: 100%;
+                max-width: 560px;
+                height: auto;
+                margin-bottom: 5rem;
+                aspect-ratio: 16 / 9;
+                border-radius: 1rem;
+            }
+
             ul {
                 list-style: none;
                 max-width: 500px;
