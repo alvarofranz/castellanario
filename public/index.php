@@ -366,7 +366,7 @@ if ($action === 'show-random') {
             break;
         case 'show-random':
         case 'show-single-term':
-            switch($term_data['term_slug']){
+            switch($_GET['term-slug']){
                 case 'me-vale-verga':
                     $yt_video_id = 'hIdfAfk_aiI';
                     break;
