@@ -74,7 +74,7 @@ if (isset($_GET['action'])) {
                 while ($term_data = $returned_terms->fetch_assoc()) {
                     $terms_data[] = $term_data;
                 }
-                $html_title = 'Significado de ' . $terms_data[0]['term'] . ' | Castellanario';
+                $html_title = 'Qué significa ' . $terms_data[0]['term'] . ' - Explicación y Ejemplos';
             } else {
                 redirect_to_home();
             }
