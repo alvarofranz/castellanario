@@ -97,7 +97,7 @@ if (isset($_GET['action'])) {
             }
             break;
         case 'privacy-terms':
-            $action = 'privacy';
+            $action = 'privacy-terms';
             break;
         default:
             redirect_to_home();
