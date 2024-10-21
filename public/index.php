@@ -375,15 +375,17 @@ if ($action === 'show-random') {
             break;
         case 'show-random':
         case 'show-single-term':
-            switch($_GET['term-slug']){
+            switch ($_GET['term-slug']) {
                 case 'me-vale-verga':
                     $yt_video_id = 'hIdfAfk_aiI';
                     break;
                 case 'me-lo-meto-por-el-culo':
                     $yt_video_id = '_lc7xFkw-tk';
                     break;
+                case 'la-madre-que-pario-a-panete':
+                    $yt_video_id = 'd0e7doErE0k';
             }
-            if(isset($yt_video_id)){
+            if (isset($yt_video_id)) {
                 echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $yt_video_id . '?rel=0" title="Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             }
         case 'show-region-terms':
