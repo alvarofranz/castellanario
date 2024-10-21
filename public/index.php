@@ -75,6 +75,12 @@ if (isset($_GET['action'])) {
                     $terms_data[] = $term_data;
                 }
                 $html_title = 'Qué significa &ldquo;' . $terms_data[0]['term'] . '&rdquo; - Explicación y Ejemplos';
+
+                // Check if image exists in current_dir/images/id.jpg
+                $image_path = __DIR__ . '/images/' . $terms_data[0]['id'] . '.jpg';
+                if (file_exists($image_path)) {
+                    $image_url = 'https://castellanario.com/images/' . $terms_data[0]['id'] . '.jpg';
+                }
             } else {
                 redirect_to_home();
             }
@@ -119,6 +125,11 @@ if ($action === 'show-random') {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $html_title; ?></title>
+        <?php
+        if(isset($image_url)){
+            echo '<meta property="og:image" content="' . $image_url . '">';
+        }
+        ?>
         <style>
             @font-face {
                 font-family: 'Dosis';
