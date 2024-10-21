@@ -425,10 +425,10 @@ if ($action === 'show-random') {
                 <p>No se recogen datos personales, puedes publicar expresiones anónimas.</p>
                 <p>No pongas ningún dato privado, es ilegal en esta web, solo cosas españolas o inventadas que no
                     identifiquen ni personas ni perros ni gatos, nada que inclumpla la ley.</p>
-                <h2>Más cositas...</h2>
+                <br><br><br><h2>Más cositas...</h2>
                 <p>Al publicar una expresión estás cediendo todos los derechos de explotación, como por ejemplo para
-                    ponera en una imagen y subirla a instagram, entre otros.</p>
-                <p>Si algo de esto not e gusta, no tienes derecho a entrar en esta web.</p>
+                    poner en una imagen y subirla a instagram, entre otros.</p>
+                <p>Si algo de esto no te gusta, no tienes derecho a entrar en esta web.</p>
             </div>
             <?php
             break;
