@@ -126,7 +126,7 @@ if ($action === 'show-random') {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $html_title; ?></title>
         <?php
-        if(isset($image_url)){
+        if (isset($image_url)) {
             echo '<meta property="og:image" content="' . $image_url . '">';
         }
         ?>
@@ -386,18 +386,20 @@ if ($action === 'show-random') {
             break;
         case 'show-random':
         case 'show-single-term':
-            switch ($_GET['term-slug']) {
-                case 'me-vale-verga':
-                    $yt_video_id = 'hIdfAfk_aiI';
-                    break;
-                case 'me-lo-meto-por-el-culo':
-                    $yt_video_id = '_lc7xFkw-tk';
-                    break;
-                case 'la-madre-que-pario-a-panete':
-                    $yt_video_id = 'd0e7doErE0k';
-            }
-            if (isset($yt_video_id)) {
-                echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $yt_video_id . '?rel=0" title="Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            if (isset($_GET['term-slug'])) {
+                switch ($_GET['term-slug']) {
+                    case 'me-vale-verga':
+                        $yt_video_id = 'hIdfAfk_aiI';
+                        break;
+                    case 'me-lo-meto-por-el-culo':
+                        $yt_video_id = '_lc7xFkw-tk';
+                        break;
+                    case 'la-madre-que-pario-a-panete':
+                        $yt_video_id = 'd0e7doErE0k';
+                }
+                if (isset($yt_video_id)) {
+                    echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $yt_video_id . '?rel=0" title="Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                }
             }
         case 'show-region-terms':
             echo '<ul>';
@@ -436,7 +438,8 @@ if ($action === 'show-random') {
                 <p>No se recogen datos personales, puedes publicar expresiones anónimas.</p>
                 <p>No pongas ningún dato privado, es ilegal en esta web, solo cosas españolas o inventadas que no
                     identifiquen ni personas ni perros ni gatos, nada que inclumpla la ley.</p>
-                <br><br><br><h2>Más cositas...</h2>
+                <br><br><br>
+                <h2>Más cositas...</h2>
                 <p>Al publicar una expresión estás cediendo todos los derechos de explotación, como por ejemplo para
                     poner en una imagen y subirla a instagram, entre otros.</p>
                 <p>Si algo de esto no te gusta, no tienes derecho a entrar en esta web.</p>
